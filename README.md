@@ -21,7 +21,8 @@ The neural network architecture is defined as follows:
 * **Hidden Layer**: One hidden layer with ReLU activation.
 * **Output Layer**: 7 output nodes, one for each class of forest cover type.
 
-```class NeuralNetwork(nn.Module):
+```python
+class NeuralNetwork(nn.Module):
     def __init__(self, input_size, hidden_size, num_classes):
         super(NeuralNetwork, self).__init__()
         self.fc1 = nn.Linear(input_size, hidden_size)
@@ -73,7 +74,8 @@ The evaluation metrics for the best model are:
 1. Clone the repository.
 2. Install the required dependencies.
 3. Run the training script to train the model and evaluate it on the test set.
-```
+   
+```bash
 git clone <repository-url>
 cd <repository-directory>
 pip install -r requirements.txt
